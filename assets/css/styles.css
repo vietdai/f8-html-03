@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #2e80ce;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+/* Common */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.66; /* 175% */
+  border-radius: 30px;
+  background: #2e80ce;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* Header */
+.header {
+  min-height: 100vh;
+  background: #10375c;
+  padding: 30px 0 110px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+}
+.logo__link {
+}
+.logo__img {
+}
+.logo__name {
+  width: 50px;
+  text-align: right;
+  color: #fff;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.16; /* 77.778% */
+  margin-left: 6px;
+}
+.logo__name strong {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 0.77; /* 77.778% */
+}
+.nav {
+}
+.nav__list {
+  display: flex;
+}
+.nav__item + .nav__item {
+  margin-left: 42px;
+}
+.nav__item {
+  position: relative;
+}
+.nav__item a.nav__active::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 10px;
+  left: -10px;
+}
+.nav__item a {
+  color: #c9d2da;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+a.nav__active,
+.nav__item a:hover {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.action {
+  display: flex;
+  align-items: center;
+}
+.login {
+  color: #c9d2da;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  margin-right: 28px;
+  padding: 8px 0px;
+}
+.signup {
+  line-height: 1.75; /* 175% */
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  border-radius: 22px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76px;
+}
+.hero__content {
+  max-width: 517px;
+}
+.hero__content .heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -1.4px;
+  margin-top: 60px;
+}
+.hero__content .desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66; /* 166.667% */
+  margin-top: 22px;
+}
+.hero__content .row {
+  margin-top: 38px;
+}
+.hero__content--btn {
+  padding: 15px 46px;
+}
+.hero__content .hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+  margin-left: 38px;
+}
+.hero__media {
+}
+.hero__images {
+  display: flex;
+  align-items: center;
+}
+.hero__img:first-child {
+  position: relative;
+  margin-right: -6px;
+}
+/* ===============SERVICE=========== */
+.service {
+  padding: 170px 0;
+}
+.service-heading {
+  color: #10375c;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.service-desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66; /* 166.667% */
+  margin-top: 18px;
+}
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.service__list {
+  margin-top: 35px;
+}
+.service-item:hover {
+  border-radius: 10px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.service-item {
+  display: flex;
+  width: 470px;
+  height: 120px;
+  padding: 21px 18px 20px 22px;
+  transition: all 0.25 ease;
+}
+.service-item:hover .service-item__icon {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.service-item__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: #eff6fd;
+  border-radius: 50%;
+}
+
+.service-item__body {
+  margin-left: 19px;
+}
+.service-item__heading {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.service-item__desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  margin-top: 8px;
+}
+.service__btn {
+  padding: 15px 48px;
+  margin-top: 55px;
+}
