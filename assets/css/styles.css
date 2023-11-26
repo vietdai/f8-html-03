@@ -29,6 +29,7 @@ a {
   line-height: 1.66; /* 175% */
   border-radius: 30px;
   background: #2e80ce;
+  transition: all 0.25s linear;
 }
 .btn:hover {
   opacity: 0.9;
@@ -172,7 +173,7 @@ a.nav__active,
 .service {
   padding: 170px 0;
 }
-.service-heading {
+.section-heading {
   color: #10375c;
   text-align: center;
   font-size: 5rem;
@@ -180,15 +181,17 @@ a.nav__active,
   line-height: 1.2; /* 120% */
   letter-spacing: -1px;
 }
-.service-desc {
+.section-desc {
+  display: flex;
+  margin: 18px auto 0;
+  width: 468px;
   color: #575f66;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.66; /* 166.667% */
-  margin-top: 18px;
 }
-.service-row {
+.section-row {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
@@ -205,7 +208,7 @@ a.nav__active,
   width: 470px;
   height: 120px;
   padding: 21px 18px 20px 22px;
-  transition: all 0.25 ease;
+  transition: all 0.25s linear;
 }
 .service-item:hover .service-item__icon {
   background-color: var(--primary-color);
@@ -220,6 +223,8 @@ a.nav__active,
   height: 60px;
   background: #eff6fd;
   border-radius: 50%;
+
+  transition: all 0.25s linear;
 }
 
 .service-item__body {
@@ -240,4 +245,187 @@ a.nav__active,
 .service__btn {
   padding: 15px 48px;
   margin-top: 55px;
+}
+/* ======== WORK ======== */
+.work {
+  padding: 100px 0px 116px;
+  background: #f6fbff;
+}
+.work .section-desc,
+.work .section-heading {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+}
+.work .section-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-top: 86px;
+}
+.work__item {
+  border: 16px solid #eaf6ff;
+  border-radius: 4px;
+  transition: all 0.25s linear;
+  padding: 43px 42px;
+}
+.work__item:hover {
+  border-color: #2e80ce;
+  margin: -16px 0 16px;
+}
+.work__logo {
+  width: 72px;
+  height: 72px;
+}
+.work__item--h3 {
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+  margin-top: 18px;
+}
+.work__item--desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  margin-top: 28px;
+}
+.work__item--link {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  margin-top: 18px;
+}
+/* =============== FEATURE ============== */
+.feature {
+  padding: 170px 0 170px;
+}
+
+.feature-left {
+  display: flex;
+  margin: 0;
+}
+.feature-img:first-child {
+  width: 512px;
+  height: 370px;
+}
+.feature-img:last-child {
+  width: 332px;
+  height: 370px;
+  margin-left: -274px;
+  margin-top: 121px;
+}
+.feature-img:first-child,
+.feature-img:last-child {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.feature-right {
+  margin-left: 130px;
+}
+.feature .section-desc,
+.feature .section-heading {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+}
+.feature .section-heading {
+  margin-top: 82px;
+}
+.feature .btn {
+  padding: 15px 52px;
+  margin-top: 38px;
+}
+/* ======== MEMBER =============*/
+.member {
+}
+.member .btn {
+  display: flex;
+  justify-content: center;
+  width: 205px;
+  padding: 15px 27px;
+  margin: auto;
+  margin-top: 38px;
+}
+.member__name {
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  margin-top: 12px;
+}
+.member__info {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.85; /* 185.714% */
+}
+.member-action {
+  display: flex;
+  margin-top: 38px;
+  justify-content: center;
+}
+.memmber-action__back,
+.memmber-action__next {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memmber-action__back:hover,
+.memmber-action__next:hover {
+  color: #fff;
+  background-color: #2e80ce;
+  cursor: pointer;
+}
+.memmber-action__next {
+  margin-left: 18px;
+}
+/*================ INSTALL============== */
+.install {
+  padding: 170px 0;
+}
+.install-body {
+  display: flex;
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+  margin-top: 95px;
+}
+.install-img {
+  margin-top: -95px;
+  margin-left: 70px;
+}
+.install-right {
+  min-width: 50%;
+  padding: 76px 70px 74px 160px;
+}
+.install .section-heading {
+  width: 489px;
+}
+.install .section-desc {
+  width: 586px;
+}
+.install .section-heading,
+.install .section-desc {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  color: #fff;
+}
+.install-download {
+  display: flex;
+  margin-top: 38px;
+}
+.install-download__link:last-child {
+  margin-left: 28px;
 }
