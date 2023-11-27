@@ -496,7 +496,9 @@ a.nav__active,
 .news-item__link:hover {
   color: #2e80ce;
 }
+/* ============APPOINTMENT============= */
 .appointment {
+  padding-bottom: 170px;
 }
 .appointment-body {
   background: #f6fbff;
@@ -519,4 +521,113 @@ a.nav__active,
   padding: 15px 41px;
   margin: auto;
   margin-top: 38px;
+}
+
+/* ==============FOOTER============= */
+.footer {
+  background: #10375c;
+  padding: 100px 0 42px;
+  font-family: "Open Sans", sans-serif;
+}
+.footer-row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+.footer-desc {
+  color: #a9b3bb;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  margin-top: 21px;
+}
+.footer-heading {
+  color: #fff;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.footer__list {
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+.footer__link {
+  color: #a9b3bb;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+  text-wrap: nowrap;
+}
+.footer__link + .footer__link {
+  margin-top: 10px;
+}
+.footer__link:hover {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__list--logo {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+.footer__logo--link a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #2e80ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+.footer__logo--link a:hover {
+  background-color: #2e80ce;
+  color: #fff;
+}
+.footer__input {
+  margin-top: 10px;
+}
+#input {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background-color: transparent;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: #fff;
+  outline: none;
+}
+#input::placeholder {
+  color: #9ca8b1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+}
+
+.footer__btn {
+  color: #fff;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.85; /* 185.714% */
+  padding: 10px 21px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+.coppyright {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+  border-top: 1px solid #406181;
+  padding-top: 28px;
 }
